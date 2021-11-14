@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Province: {{province.replace('-',' ').title()}}</h1>
+    <h1>Career: {{job.replace('-',' ').title()}}</h1>
+    <br>
+    <h3>The average salary of a {{job.replace('-',' ').title()}} in {{province.replace('-',' ').title()}}: {{sal}} </h3>
+    <br>
+    <h3>The quality of life in {{province}} is: {{qol}}</h3>
+    <br>
+    <h3>Top {{top_num}} universities in {{province}}</h3>
+    <ol>
+    {% for i in range(top_num) %}
+        <li> {{uni_names[i]}}</li>
+        <p>Domestic Tuition for one year: {{dom_tuition[i]}}</p>
+        <p>International Tuition for one year: {{inter_tuition[i]}}</p>
+    {% endfor %}
+    </ol>
+</body>
+</html>
