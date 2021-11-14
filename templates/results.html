@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
     <title>Document</title>
 </head>
 <body>
@@ -12,7 +13,7 @@
     <br>
     <h3>The average salary of a {{job.replace('-',' ').title()}} in {{province.replace('-',' ').title()}}: {{sal}} </h3>
     <br>
-    <h3>The quality of life in {{province}} is: {{qol}}</h3>
+    <h3>The quality of life index rating in {{province}} is: {{qol}}</h3>
     <br>
     <h3>Top {{top_num}} universities in {{province}}</h3>
     <ol>
@@ -22,5 +23,10 @@
         <p>International Tuition for one year: {{inter_tuition[i]}}</p>
     {% endfor %}
     </ol>
+    <br>
+    <br>
+    <h4>The university rankings and tuition costs are from the website: https://www.4icu.org/ca/</h4>
+    <h4>The quality of life index ratings are from the website: https://www.numbeo.com/quality-of-life/ </h4>
+    <h4>The average salaries are from the website: https://ca.indeed.com/career/salaries</h4>
 </body>
 </html>
