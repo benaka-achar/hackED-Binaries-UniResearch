@@ -11,14 +11,14 @@
     <h1>Province: {{province.replace('-',' ').title()}}</h1>
     <h1>Career: {{job.replace('-',' ').title()}}</h1>
     <br>
-    <h3>The average salary of a {{job.replace('-',' ').title()}} in {{province.replace('-',' ').title()}}: {{sal}} </h3>
+    <h3>The average salary of a {{job.replace('-',' ').title()}} in {{province.replace('-',' ').title()}}: <h2>{{sal}}</h2> </h3>
     <br>
-    <h3>The quality of life index rating in {{province}} is: {{qol}}</h3>
+    <h3>The quality of life index rating in {{province}} is: <h2>{{qol}}</h2></h3>
     <br>
     <h3>Top {{top_num}} universities in {{province}}</h3>
     <ol>
     {% for i in range(top_num) %}
-        <li> {{uni_names[i]}}</li>
+        <h2>{{(i+1)}}. {{uni_names[i]}}</h2>
         <p>Domestic Tuition for one year: {{dom_tuition[i]}}</p>
         <p>International Tuition for one year: {{inter_tuition[i]}}</p>
     {% endfor %}
