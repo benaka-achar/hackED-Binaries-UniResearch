@@ -19,8 +19,8 @@
     <ol>
     {% for i in range(top_num) %}
         <h2>{{(i+1)}}. {{uni_names[i]}}</h2>
-        <p>Domestic Tuition for one year: {{dom_tuition[i]}}</p>
-        <p>International Tuition for one year: {{inter_tuition[i]}}</p>
+        <p>Domestic Tuition for one year: <strong>{{dom_tuition[i]}}</strong></p>
+        <p>International Tuition for one year: <strong>{{inter_tuition[i]}}</strong></p>
     {% endfor %}
     </ol>
     <br>
